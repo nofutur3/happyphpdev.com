@@ -1,0 +1,12 @@
+{
+    "config": {
+        "vendor-dir": "./vendor",
+        "bin-dir": "./bin"
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "deployer/deployer": "^6.0"
+    }
+}
