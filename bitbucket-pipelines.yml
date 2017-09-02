@@ -3,7 +3,7 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: php:7.1.1
+image: php:7.1.1-alpine
 
 pipelines:
   default:
@@ -15,3 +15,12 @@ pipelines:
           - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
           - composer install
           - vendor/bin/phpunit
+  branches:
+    master:
+      - step:
+          caches:
+            - composer
+          script:
+            - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+            - composer install
+            - bin/dep deploy production
