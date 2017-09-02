@@ -8,9 +8,9 @@ require 'recipe/common.php';
 
 set('repository', 'git@bitbucket.org:jvyvazil/happyphpdev.com.git');
 set('git_tty', true); // [Optional] Allocate tty for git on first deployment
-set('shared_files', []);
-//set('shared_dirs', ['subdomains/www/uploads', 'var']);
-//set('writable_dirs', ['subdomains/www/uploads', 'var']);
+set('shared_files', ['.env']);
+set('shared_dirs', ['web/app/uploads']);
+set('writable_dirs', ['web/app/uploads']);
 //set('clear_path', ['var/temp/cache']);
 
 // Hosts
