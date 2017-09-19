@@ -39,5 +39,10 @@ task('deploy', [
 	'success',
 ]);
 
+task('reload:php-fpm', function() {
+	run('sudo service php7.1-fpm reload');
+});
+
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
+after('deploy', 'reload:php-fpm');

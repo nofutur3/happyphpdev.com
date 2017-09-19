@@ -21,7 +21,8 @@
         "wpackagist-plugin/google-sitemap-generator": "^4.0",
         "wpackagist-plugin/jetpack": "^5.3",
         "wpackagist-plugin/nk-google-analytics": "^1.4",
-        "wpackagist-theme/twentyfifteen": "^1.8"
+        "wpackagist-theme/twentyfifteen": "^1.8",
+        "wpackagist-plugin/wordpress-popular-posts": "^3.3"
     },
     "require-dev": {
         "deployer/deployer": "^6.0",

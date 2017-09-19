@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9862148f5d395180f07dbdcc98c26d4",
+    "content-hash": "3138cdab1b41daf59db7f7c53451e614",
     "packages": [
         {
             "name": "composer/installers",
@@ -486,6 +486,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/nk-google-analytics/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-popular-posts",
+            "version": "3.3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-popular-posts/",
+                "reference": "tags/3.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-popular-posts.3.3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-popular-posts/"
         },
         {
             "name": "wpackagist-theme/twentyfifteen",
