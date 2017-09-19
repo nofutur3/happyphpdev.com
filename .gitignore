@@ -59,8 +59,8 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 
 # WordPress
-web/wp
-web/.htaccess
+#web/wp
+#web/.htaccess
 
 # Dotenv
 .env
