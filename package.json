@@ -1,0 +1,22 @@
+{
+  "name": "happyphpdev.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vuepress": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/jvyvazil/happyphpdev.com.git"
+  },
+  "author": "Jakub Vyvazil",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jvyvazil/happyphpdev.com#readme"
+}
