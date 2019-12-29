@@ -70,3 +70,4 @@ web/app/uploads/*
 # Composer
 vendor/*
 !vendor/.gitkeep
+/docs/.vuepress/dist/

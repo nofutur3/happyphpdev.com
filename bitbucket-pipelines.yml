@@ -1,11 +1,24 @@
-image: php:7.1.1-alpine
+image: node:10-alpine
 
 pipelines:
   branches:
     master:
       - step:
+          name: Build
           caches:
             - node
           script:
             - node -v
             - npm -v
+            - npm install
+            - npm run docs:build
+          artifacts:
+            - docs/.vuepress/dist/**
+      - step:
+          name: Deploy
+          deployment: production
+          script:
+            - pipe: atlassian/firebase-deploy:0.2.1
+              variables:
+                FIREBASE_TOKEN: $FIREBASE_TOKEN
+                PROJECT_ID: $FIREBASE_PROJECT

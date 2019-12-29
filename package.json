@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "firebase-tools": "^7.11.0",
     "vuepress": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "firebase:deploy": "./node_modules/.bin/firebase deploy"
   },
   "repository": {
     "type": "git",
