@@ -1,0 +1,1 @@
+solid, explained with examples
