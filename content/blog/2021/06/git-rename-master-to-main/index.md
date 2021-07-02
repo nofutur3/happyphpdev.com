@@ -2,6 +2,9 @@
 title: How to rename master to main | GIT
 date: "2021-06-01"
 description: "Hello World"
+category: "tips"
+tags:
+    - git
 ---
 
 ```bash

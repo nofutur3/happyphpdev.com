@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 const BuildDate = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       currentBuildDate {
         currentDate
@@ -10,9 +10,7 @@ const BuildDate = () => {
     }
   `)
 
-    return (
-        <span>{data.currentBuildDate.currentDate}</span>
-    )
+  return <span>{data.currentBuildDate.currentDate}</span>
 }
 
 export default BuildDate
