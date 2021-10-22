@@ -7,19 +7,29 @@ tags:
     - git
 ---
 
-```bash
+Do you want to have your main branch named to <strong>main</strong> instead of deprecated <strong>master</strong>? Not problem at all. You should check how you named your remote repo(s), it's usually called <strong>origin</strong>. You can check it:
+
+```git
+git remotes
+```
+
+And now you are ready to go:
+
+```git
 git branch -m master main
 git push -u origin main
 git push origin --delete master
 ```
 
-origin? git remotes
+<hr>
 
-```
- jakub@zion  ~/Projects/personal/happyphpdev.com   main ±✚  git push origin --delete master
-remote: error: refusing to delete the current branch: refs/heads/master
-To bitbucket.org:jvyvazil/happyphpdev.com.git
+Do you see this error message?
+
+``` bash
  ! [remote rejected] master (deletion of the current branch prohibited)
-error: failed to push some refs to 'bitbucket.org:jvyvazil/happyphpdev.com.git'
-
 ```
+
+Alright, you have to set the main branch in your remote GIT repository.
+
+
+![Bitbucket setup](./bitbucket-setup.png)
