@@ -31,5 +31,6 @@ Do you see this error message?
 
 Alright, you have to set the main branch in your remote GIT repository.
 
-
 ![Bitbucket setup](./bitbucket-setup.png)
+
+git config --global init.defaultBranch main
