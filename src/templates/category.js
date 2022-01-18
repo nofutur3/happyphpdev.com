@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Container } from "react-bootstrap"
 
 import Layout from "../layouts/base"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PostsList from "../components/post-list"
 
 const CategoryTemplate = ({ location, pageContext, data }) => {
@@ -11,7 +11,7 @@ const CategoryTemplate = ({ location, pageContext, data }) => {
   return (
     <Layout location={location} title={`Posts in category "${category}"`}>
       <div className="category-container">
-        <SEO title={`Posts in category "${category}"`} />
+        <Seo title={`Posts in category "${category}"`} />
 
         <Container>
           <h1>Category: {category}</h1>

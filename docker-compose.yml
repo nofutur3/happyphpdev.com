@@ -1,14 +1,14 @@
 version: '3.1'
 
 services:
-  node:
+  app:
     build:
       context: .
       dockerfile: ./docker/node/Dockerfile
     restart: always
+    user: 1000:1000
     ports:
       - 8000:8000
-    command: ["npm", "run", "develop"]
-    user: 1000:1000
     volumes:
-      - ./:/srv/app
+      - ./:/var/www
+    command: ["npm", "run", "docker-develop"]

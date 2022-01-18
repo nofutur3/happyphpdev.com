@@ -1,7 +1,17 @@
 #!/bin/sh
+
 set -e
 
-npm ci
+echo "▓▓▓▒▒░░ Welcome into the NODE container ░░▒▒▓▓▓";
+echo "---"
+echo "We are going to install dependencies, please wait..."
+echo "---"
+echo ""
+
+npm install
+
+echo ""
+echo "▓▓▓▒▒░░ All done, enjoy development ░░▒▒▓▓▓";
 
 # Run command with node if the first argument contains a "-" or is not a system command. The last
 # part inside the "{}" is a workaround for the following bug in ash/dash:
