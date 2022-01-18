@@ -3,7 +3,7 @@ module.exports = {
     title: `happy PHP dev`,
     author: {
       name: `Jakub Vyvazil`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `who lives and works in Czech Republic.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://www.happyphpdev.com/`,
