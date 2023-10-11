@@ -1,6 +1,11 @@
 name: Deploy Site
 
-on: [push, repository_dispatch]
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [deploy]
 
 jobs:
   build:
