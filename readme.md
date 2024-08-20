@@ -15,5 +15,5 @@ docker compose up -d
 ## requirements
 
 | technology | version |
-|--- | --- |
-| node.js | 12.13.0 |
+|--- |---------|
+| node.js | 16      |
