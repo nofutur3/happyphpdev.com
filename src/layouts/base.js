@@ -33,8 +33,7 @@ const Base = ({ location, title, children }) => {
               {children}
           </main>
       </div>
-
-      <Footer></Footer>
+        <Footer></Footer>
     </div>
   )
 }
