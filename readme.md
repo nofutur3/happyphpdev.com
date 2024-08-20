@@ -16,4 +16,4 @@ docker compose up -d
 
 | technology | version |
 |--- |---------|
-| node.js | 16      |
+| node.js | 18      |

@@ -124,9 +124,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
     {
-      resolve: "gatsby-plugin-build-date",
-    },
-    {
       resolve: "gatsby-plugin-categories",
       options: {
         templatePath: `${__dirname}/src/templates/category.js`,
