@@ -9,7 +9,7 @@ npm run develop
 ## ... or with docker
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## requirements
