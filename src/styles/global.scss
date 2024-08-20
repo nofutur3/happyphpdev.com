@@ -19,3 +19,15 @@ footer {
   }
 }
 
+.bio {
+  display: block;
+  .avatar {
+    padding-bottom: 2em;
+    .bio-avatar {
+      margin: 0 auto;
+    }
+  }
+  .summary {
+    font-size: 90%;
+  }
+}
