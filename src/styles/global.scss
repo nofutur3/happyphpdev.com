@@ -5,4 +5,29 @@
 footer {
   position: fixed;
   bottom: 0;
+  background: #cfcfcf;
+  width: 100%;
+  padding: 0;
+  left: 0;
+  & > p {
+    margin: 0;
+    padding: 6px;
+    font-size: 80%;
+    a {
+      color: #000;
+    }
+  }
+}
+
+.bio {
+  display: block;
+  .avatar {
+    padding-bottom: 2em;
+    .bio-avatar {
+      margin: 0 auto;
+    }
+  }
+  .summary {
+    font-size: 90%;
+  }
 }

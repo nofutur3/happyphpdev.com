@@ -9,6 +9,7 @@ echo "---"
 echo ""
 
 npm install
+npx browserslist@latest --update-db
 
 echo ""
 echo "▓▓▓▒▒░░ All done, enjoy development ░░▒▒▓▓▓";
