@@ -4,9 +4,9 @@ services:
       context: .
       dockerfile: ./docker/node/Dockerfile
     restart: always
-    user: 1000:1000
+    user: ${UID:-1000}:${GID:-1000}
     ports:
-      - 8000:8000
+      - ${PORT:-8000}:8000
     volumes:
       - ./:/var/www
     command: ["npm", "run", "docker-develop"]
