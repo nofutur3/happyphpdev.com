@@ -1,0 +1,3 @@
+[submodule ".claude/workflow"]
+	path = .claude/workflow
+	url = git@github.com:nofutur3/claude-workflow.git

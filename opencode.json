@@ -1,0 +1,25 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    ".claude/workflow/CLAUDE.md",
+    ".claude/workflow/AGENTS.md",
+    ".claude/workflow/rules/*.md"
+  ],
+  "skills": {
+    "paths": [".claude/workflow/skills"]
+  },
+  "provider": {
+    "local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Local Ollama (via LiteLLM)",
+      "options": {
+        "baseURL": "http://litellm.dev.local:8888/v1"
+      },
+      "models": {
+        "local-opus": { "name": "local-opus (deepseek-r1:14b)" },
+        "local-sonnet": { "name": "local-sonnet (qwen2.5-coder:14b)" },
+        "local-haiku": { "name": "local-haiku (qwen2.5-coder:7b)" }
+      }
+    }
+  }
+}
