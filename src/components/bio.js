@@ -34,21 +34,21 @@ const Bio = () => {
     <div className="bio">
       <div className="avatar">
         <StaticImage
-            className="bio-avatar"
-            layout="fixed"
-            formats={["AUTO", "WEBP", "AVIF"]}
-            src="../images/profile-pic.png"
-            width={128}
-            height={128}
-            quality={95}
-            alt="Profile picture"
+          className="bio-avatar"
+          layout="fixed"
+          formats={["AUTO", "WEBP", "AVIF"]}
+          src="../images/profile-pic.png"
+          width={128}
+          height={128}
+          quality={95}
+          alt="Profile picture"
         />
       </div>
       <div className="summary">
         {author?.name && (
-            <p>
-              Written by <strong>{author.name}</strong> {author?.summary || null}
-            </p>
+          <p>
+            Written by <strong>{author.name}</strong> {author?.summary || null}
+          </p>
         )}
       </div>
     </div>

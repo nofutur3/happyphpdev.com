@@ -1,9 +1,5 @@
 import * as React from "react"
 
-const Support: any = ({
+const Support: any = ({}) => <div>Implement</div>
 
-}) => (
-    <div>Implement</div>
-)
-
-export default Support;
+export default Support

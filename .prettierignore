@@ -2,3 +2,10 @@
 package.json
 package-lock.json
 public
+.claude/workflow
+.claude/skills
+.claude/agents
+.claude/commands
+.opencode
+.github/ISSUE_TEMPLATE
+.github/PULL_REQUEST_TEMPLATE.md
