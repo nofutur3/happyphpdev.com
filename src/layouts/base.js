@@ -12,8 +12,7 @@ const Base = ({ location, title, children }) => {
     header = (
       <h1 className="main-heading">
         <Link to="/" className="brand" aria-label={title}>
-          <span className="brand-prompt">$</span> happyphpdev
-          <span className="brand-cursor" aria-hidden="true"></span>
+          <span className="brand-prompt">$</span> happyphpdev<span className="brand-cursor" aria-hidden="true">&#9608;</span>
         </Link>
       </h1>
     )
