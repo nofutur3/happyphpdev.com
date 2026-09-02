@@ -313,6 +313,25 @@ a:focus {
   margin: 0;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.brand-prompt {
+  color: var(--color-primary);
+}
+
+.brand-cursor {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.85em;
+  margin-left: 0.05em;
+  background: var(--color-heading-black);
+  vertical-align: text-bottom;
+}
+
 .post-card {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--spacing-8);

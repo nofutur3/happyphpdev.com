@@ -114,12 +114,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `happy PHP dev`,
-        short_name: `GatsbyJS`,
+        short_name: `happyphpdev`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#fafafa`,
+        theme_color: `#067a44`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
