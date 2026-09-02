@@ -316,22 +316,13 @@ a:focus {
   word-break: break-word;
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .brand-prompt {
   color: var(--color-primary);
 }
 
 .brand-cursor {
-  display: inline-block;
-  width: 0.5em;
-  height: 1em;
-  margin-left: 0.15em;
-  background: var(--color-heading-black);
+  color: var(--color-heading-black);
+  margin-left: 0.05em;
 }
 
 .brand:hover .brand-cursor {
