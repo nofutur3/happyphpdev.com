@@ -10,6 +10,6 @@ import "@fontsource/jetbrains-mono/700.css"
 import "./src/style.css"
 
 // Highlighting for code blocks
-import "prismjs/themes/prism.css"
+import "./src/styles/prism-theme.css"
 
 import "./src/styles/global.scss"
