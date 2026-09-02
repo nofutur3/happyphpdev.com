@@ -25,11 +25,21 @@ const Base = ({ location, title, children }) => {
   return (
     <div className="global-wrapper container" data-is-root-path={isRootPath}>
       <div className="row">
-        <div className="col-2" id="sidebar">
+        <div className="col-12 col-md-3" id="sidebar">
           <header className="global-header">{header}</header>
+          <nav className="sidebar-nav" aria-label="Primary">
+            <ul>
+              <li>
+                <Link to="/">&gt; home</Link>
+              </li>
+              <li>
+                <a href="/rss.xml">&gt; rss</a>
+              </li>
+            </ul>
+          </nav>
           <Bio></Bio>
         </div>
-        <main className="col-10" id="content">
+        <main className="col-12 col-md-9" id="content">
           {children}
         </main>
       </div>
