@@ -94,24 +94,22 @@ footer {
 }
 
 .site-footer {
-  border-top: 1px solid var(--color-border);
-  margin-top: var(--spacing-16);
-  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #cfcfcf;
+  padding: 0;
 }
 
 .site-footer p {
-  font-family: var(--font-heading);
-  font-size: var(--fontSize-0);
-  color: var(--color-text-light);
-  margin-bottom: 0;
+  margin: 0;
+  padding: 6px;
+  font-size: 80%;
 }
 
 .site-footer a {
-  color: var(--color-text-light);
-}
-
-.site-footer a:hover {
-  color: var(--color-primary);
+  color: #000;
 }
 
 hr {
