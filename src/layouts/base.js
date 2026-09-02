@@ -11,7 +11,7 @@ const Base = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/" aria-label={title}>
+        <Link to="/" className="brand" aria-label={title}>
           <span className="brand-prompt">$</span> happyphpdev
           <span className="brand-cursor" aria-hidden="true"></span>
         </Link>

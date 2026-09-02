@@ -316,6 +316,12 @@ a:focus {
   word-break: break-word;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .brand-prompt {
   color: var(--color-primary);
 }
@@ -323,10 +329,30 @@ a:focus {
 .brand-cursor {
   display: inline-block;
   width: 0.5em;
-  height: 0.85em;
-  margin-left: 0.05em;
+  height: 1em;
+  margin-left: 0.15em;
   background: var(--color-heading-black);
-  vertical-align: baseline;
+}
+
+.brand:hover .brand-cursor {
+  animation: brand-cursor-blink 1s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand:hover .brand-cursor {
+    animation: none;
+  }
+}
+
+@keyframes brand-cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .post-card {
