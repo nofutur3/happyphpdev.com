@@ -326,7 +326,7 @@ a:focus {
   height: 0.85em;
   margin-left: 0.05em;
   background: var(--color-heading-black);
-  vertical-align: text-bottom;
+  vertical-align: baseline;
 }
 
 .post-card {
