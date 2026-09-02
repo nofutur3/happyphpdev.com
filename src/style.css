@@ -93,6 +93,27 @@ footer {
   padding: var(--spacing-6) var(--spacing-0);
 }
 
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--spacing-16);
+  text-align: center;
+}
+
+.site-footer p {
+  font-family: var(--font-heading);
+  font-size: var(--fontSize-0);
+  color: var(--color-text-light);
+  margin-bottom: 0;
+}
+
+.site-footer a {
+  color: var(--color-text-light);
+}
+
+.site-footer a:hover {
+  color: var(--color-primary);
+}
+
 hr {
   background: var(--color-accent);
   height: 1px;
@@ -250,6 +271,13 @@ a:focus {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.global-wrapper > .row {
+  flex: 1 0 auto;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
