@@ -396,6 +396,7 @@ a:focus {
 .post-divider {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-4);
   margin: var(--spacing-8) 0;
 }
