@@ -1,8 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const PostsListCard = ({ frontmatter, fields, excerpt }) => {
+const EXCERPT_SEPARATOR = "<!-- more -->"
+
+const PostsListCard = ({
+  frontmatter,
+  fields,
+  excerpt,
+  html,
+  rawMarkdownBody,
+}) => {
   const title = frontmatter.title || fields.slug
+  const hasMore = Boolean(
+    rawMarkdownBody && rawMarkdownBody.includes(EXCERPT_SEPARATOR),
+  )
+  const body = hasMore ? excerpt : html
 
   return (
     <article className="post-card">
@@ -15,11 +27,13 @@ const PostsListCard = ({ frontmatter, fields, excerpt }) => {
       </h2>
       <div
         className="post-card-excerpt"
-        dangerouslySetInnerHTML={{ __html: excerpt }}
+        dangerouslySetInnerHTML={{ __html: body }}
       />
-      <Link to={fields.slug} className="post-card-link">
-        Read more &rarr;
-      </Link>
+      {hasMore && (
+        <Link to={fields.slug} className="post-card-link">
+          Read more &rarr;
+        </Link>
+      )}
     </article>
   )
 }
