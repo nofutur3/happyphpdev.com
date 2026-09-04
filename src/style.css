@@ -367,6 +367,28 @@ a:focus {
   font-size: var(--fontSize-5);
 }
 
+.post-title-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-title-list li {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-title-list a {
+  display: block;
+  padding: var(--spacing-3) 0;
+  color: var(--color-heading);
+  text-decoration: none;
+  font-size: var(--fontSize-2);
+}
+
+.post-title-list a:hover {
+  color: var(--color-primary);
+}
+
 .post-card {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--spacing-8);

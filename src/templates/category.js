@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../layouts/base"
 import Seo from "../components/seo"
-import PostsList from "../components/post-list"
+import PostTitleList from "../components/post-title-list"
 
 const CategoryTemplate = ({ location, pageContext, data }) => {
   const { category } = pageContext
@@ -14,10 +14,7 @@ const CategoryTemplate = ({ location, pageContext, data }) => {
         <p className="archive-eyebrow">// category</p>
         <h1 className="archive-title">{category}</h1>
       </header>
-      <PostsList
-        postEdges={data.allMarkdownRemark.edges}
-        showCategory={false}
-      />
+      <PostTitleList postEdges={data.allMarkdownRemark.edges} />
     </Layout>
   )
 }
@@ -33,13 +30,9 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
-            category
           }
-          excerpt
-          timeToRead
           frontmatter {
             title
-            date
           }
         }
       }

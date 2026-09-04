@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const PostsListCard = ({ frontmatter, fields, excerpt, showCategory = true }) => {
+const PostsListCard = ({ frontmatter, fields, excerpt }) => {
   const title = frontmatter.title || fields.slug
 
   return (
     <article className="post-card">
       <p className="post-card-meta">
         {frontmatter.date}
-        {showCategory && fields.category && ` · ${fields.category}`}
+        {fields.category && ` · ${fields.category}`}
       </p>
       <h2 className="post-card-title">
         <Link to={fields.slug}>{title}</Link>
