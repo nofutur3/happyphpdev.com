@@ -42,7 +42,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
-          excerpt
+          excerpt(format: HTML)
           fields {
             slug
             category
@@ -50,7 +50,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }
