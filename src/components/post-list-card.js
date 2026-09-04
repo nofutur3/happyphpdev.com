@@ -17,7 +17,7 @@ const PostsListCard = ({
   const body = hasMore ? excerpt : html
 
   return (
-    <article className="post-card">
+    <article className={hasMore ? "post-card" : "post-card post-card--note"}>
       <p className="post-card-meta">
         {frontmatter.date}
         {fields.category && ` · ${fields.category}`}
