@@ -1,16 +1,16 @@
 ---
-title: How to rename master to main at Git
+title: How to rename master to main in Git
 date: "2021-06-01"
-description: "Do you want to have your main branch named to main instead of deprecated master? Not problem at all. Just follow these steps."
+description: "Do you want to rename your main branch from the deprecated master to main? No problem at all, just follow these steps."
 category: "tips"
 tags:
     - git
 ---
 
-Do you want to have your main branch named to <strong>main</strong> instead of deprecated <strong>master</strong>? Not problem at all. You should check how you named your remote repo(s), it's usually called <strong>origin</strong>. You can check it:
+Do you want to rename your main branch from the deprecated <strong>master</strong> to <strong>main</strong>? No problem at all. First check what your remote repository is called, it's usually <strong>origin</strong>:
 
 ```bash
-git remotes
+git remote -v
 ```
 
 And now you are ready to go:
@@ -29,11 +29,11 @@ Do you see this error message?
  ! [remote rejected] master (deletion of the current branch prohibited)
 ```
 
-Alright, you have to set the main branch in your remote GIT repository.
+You'll need to change the default branch in your remote Git host's settings first (Bitbucket in this example):
 
 ![Bitbucket setup](./bitbucket-setup.png)
 
-And don't forget to set the default branch in your local GIT repository:
+And don't forget to set the default branch in your local Git repository:
 
 ```bash
 git config --global init.defaultBranch main
