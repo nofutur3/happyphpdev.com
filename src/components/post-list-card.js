@@ -15,9 +15,7 @@ const PostsListCard = ({ frontmatter, fields, excerpt }) => {
       </h2>
       <div
         className="post-card-excerpt"
-        dangerouslySetInnerHTML={{
-          __html: frontmatter.description || excerpt,
-        }}
+        dangerouslySetInnerHTML={{ __html: excerpt }}
       />
       <Link to={fields.slug} className="post-card-link">
         Read more &rarr;
