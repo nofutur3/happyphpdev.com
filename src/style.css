@@ -536,6 +536,16 @@ a:focus {
   border-bottom-color: var(--color-primary);
 }
 
+.eof-marker {
+  font-family: var(--font-heading);
+  font-size: var(--fontSize-0);
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  opacity: 0.7;
+  text-align: center;
+  margin: var(--spacing-8) 0;
+}
+
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
