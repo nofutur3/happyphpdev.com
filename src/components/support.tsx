@@ -43,6 +43,7 @@ const Support = () => {
   return (
     <aside className="support" aria-label="Support the author">
       <p className="support-heading">// support</p>
+      <p className="support-prompt">Enjoyed the post? A tip's always welcome.</p>
       <div className="support-banners">
         <a
           href={`https://revolut.me/${REVOLUT_HANDLE}`}
