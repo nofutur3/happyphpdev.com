@@ -255,12 +255,12 @@ table thead tr th {
 
 /* Link */
 
-a {
+body a {
   color: var(--color-primary);
 }
 
-a:hover,
-a:focus {
+body a:hover,
+body a:focus {
   text-decoration: none;
 }
 
