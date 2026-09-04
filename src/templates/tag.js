@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Container } from "react-bootstrap"
 
 import Layout from "../layouts/base"
 import Seo from "../components/seo"
@@ -10,13 +9,12 @@ const TagTemplate = ({ location, pageContext, data }) => {
   const { tag } = pageContext
   return (
     <Layout location={location} title={`Posts in tag "${tag}"`}>
-      <div className="tag-container">
-        <Seo title={`Posts in tag "${tag}"`} />
-        <Container>
-          <h1>Tag: {tag}</h1>
-          <PostsList postEdges={data.allMarkdownRemark.edges} />
-        </Container>
-      </div>
+      <Seo title={`Posts in tag "${tag}"`} />
+      <header className="archive-header">
+        <p className="archive-eyebrow">// tag</p>
+        <h1 className="archive-title">{tag}</h1>
+      </header>
+      <PostsList postEdges={data.allMarkdownRemark.edges} />
     </Layout>
   )
 }

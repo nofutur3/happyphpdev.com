@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Container } from "react-bootstrap"
 
 import Layout from "../layouts/base"
 import Seo from "../components/seo"
@@ -10,14 +9,15 @@ const CategoryTemplate = ({ location, pageContext, data }) => {
   const { category } = pageContext
   return (
     <Layout location={location} title={`Posts in category "${category}"`}>
-      <div className="category-container">
-        <Seo title={`Posts in category "${category}"`} />
-
-        <Container>
-          <h1>Category: {category}</h1>
-          <PostsList postEdges={data.allMarkdownRemark.edges} />
-        </Container>
-      </div>
+      <Seo title={`Posts in category "${category}"`} />
+      <header className="archive-header">
+        <p className="archive-eyebrow">// category</p>
+        <h1 className="archive-title">{category}</h1>
+      </header>
+      <PostsList
+        postEdges={data.allMarkdownRemark.edges}
+        showCategory={false}
+      />
     </Layout>
   )
 }
