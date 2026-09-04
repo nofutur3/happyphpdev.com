@@ -32,7 +32,9 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        <p className="eof-marker" aria-hidden="true">
+          // EOF
+        </p>
         <Support></Support>
       </article>
       <nav className="blog-post-nav">
