@@ -50,6 +50,6 @@ Thumbs.db
 Once you have your .gitignore file, you can tell Git to use it globally:
 
 ```bash
-git config --global core.excludesfile ~/.gitignore
+git config --global core.excludesFile ~/.gitignore
 ```
 
