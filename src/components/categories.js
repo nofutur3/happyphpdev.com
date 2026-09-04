@@ -35,6 +35,7 @@ const Categories = () => {
         {categories.map(({ fieldValue, totalCount }) => (
           <li key={fieldValue}>
             <Link to={`/category/${fieldValue}/`}>
+              <span className="menu-marker">&gt;</span>
               {fieldValue} <span className="count">({totalCount})</span>
             </Link>
           </li>
