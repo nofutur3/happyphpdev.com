@@ -10,6 +10,8 @@ tags:
 
 Do you often get this message when you try to push your changes to the remote repository?
 
+<!-- more -->
+
 ```bash
 There is no tracking information for the current branch.
 Please specify which branch you want to merge with.
