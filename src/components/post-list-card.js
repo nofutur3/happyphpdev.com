@@ -11,7 +11,7 @@ const PostsListCard = ({ frontmatter, fields, excerpt }) => {
         {fields.category && ` · ${fields.category}`}
       </p>
       <h2 className="post-card-title">
-        <Link to={`/${fields.slug}/`}>{title}</Link>
+        <Link to={fields.slug}>{title}</Link>
       </h2>
       <div
         className="post-card-excerpt"
@@ -19,7 +19,7 @@ const PostsListCard = ({ frontmatter, fields, excerpt }) => {
           __html: frontmatter.description || excerpt,
         }}
       />
-      <Link to={`/${fields.slug}/`} className="post-card-link">
+      <Link to={fields.slug} className="post-card-link">
         Read more &rarr;
       </Link>
     </article>
