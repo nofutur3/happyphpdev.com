@@ -32,7 +32,7 @@ const Bio = () => {
 
   return (
     <div className="bio">
-        {/*<div className="avatar">
+      <div className="avatar">
         <StaticImage
           className="bio-avatar"
           layout="fixed"
@@ -50,7 +50,7 @@ const Bio = () => {
             Written by <strong>{author.name}</strong> {author?.summary || null}
           </p>
         )}
-      </div>*/}
+      </div>
     </div>
   )
 }
