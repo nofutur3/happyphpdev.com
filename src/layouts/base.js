@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Footer from "./../components/footer"
-import Bio from "../components/bio"
+// import Bio from "../components/bio"
 import Categories from "../components/categories"
 
 const Base = ({ location, title, children }) => {
@@ -45,7 +45,7 @@ const Base = ({ location, title, children }) => {
               <Categories></Categories>
             </ul>
           </nav>
-          <Bio></Bio>
+          {/* <Bio></Bio> */}
         </div>
         <main className="col-12 col-md-9" id="content">
           {children}
