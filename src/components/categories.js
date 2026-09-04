@@ -29,8 +29,8 @@ const Categories = () => {
   }
 
   return (
-    <nav className="sidebar-categories" aria-label="Categories">
-      <p className="sidebar-heading">// categories</p>
+    <li className="sidebar-categories">
+      <span className="menu-marker">//</span>categories
       <ul>
         {categories.map(({ fieldValue, totalCount }) => (
           <li key={fieldValue}>
@@ -40,7 +40,7 @@ const Categories = () => {
           </li>
         ))}
       </ul>
-    </nav>
+    </li>
   )
 }
 
