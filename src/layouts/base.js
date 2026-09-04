@@ -33,14 +33,18 @@ const Base = ({ location, title, children }) => {
           <nav className="sidebar-nav" aria-label="Primary">
             <ul>
               <li>
-                <Link to="/">&gt; home</Link>
+                <Link to="/">
+                  <span className="menu-marker">&gt;</span>home
+                </Link>
               </li>
               <li>
-                <a href="/rss.xml">&gt; rss</a>
+                <a href="/rss.xml">
+                  <span className="menu-marker">&gt;</span>rss
+                </a>
               </li>
+              <Categories></Categories>
             </ul>
           </nav>
-          <Categories></Categories>
           <Bio></Bio>
         </div>
         <main className="col-12 col-md-9" id="content">
