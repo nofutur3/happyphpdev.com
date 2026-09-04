@@ -389,10 +389,33 @@ a:focus {
   color: var(--color-primary);
 }
 
-.post-card {
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: var(--spacing-8);
+.post-card:last-of-type {
   margin-bottom: var(--spacing-8);
+}
+
+.post-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin: var(--spacing-8) 0;
+}
+
+.post-divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+  max-width: 3rem;
+}
+
+.post-divider-stat {
+  font-family: var(--font-heading);
+  font-size: var(--fontSize-0);
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+.post-divider-plus {
+  color: var(--color-primary);
 }
 
 .post-card-meta {
