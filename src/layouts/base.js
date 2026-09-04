@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Footer from "./../components/footer"
 import Bio from "../components/bio"
+import Categories from "../components/categories"
 
 const Base = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -39,6 +40,7 @@ const Base = ({ location, title, children }) => {
               </li>
             </ul>
           </nav>
+          <Categories></Categories>
           <Bio></Bio>
         </div>
         <main className="col-12 col-md-9" id="content">

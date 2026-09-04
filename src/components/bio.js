@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
@@ -23,25 +23,16 @@ const Bio = () => {
           }
         }
       }
-      allMarkdownRemark(limit: 1000) {
-        group(field: { fields: { category: SELECT } }) {
-          fieldValue
-          totalCount
-        }
-      }
     }
   `)
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
-  const categories = data.allMarkdownRemark.group.filter(
-    ({ fieldValue }) => fieldValue,
-  )
 
   return (
     <div className="bio">
-      <div className="avatar">
+        {/*<div className="avatar">
         <StaticImage
           className="bio-avatar"
           layout="fixed"
@@ -59,21 +50,7 @@ const Bio = () => {
             Written by <strong>{author.name}</strong> {author?.summary || null}
           </p>
         )}
-      </div>
-      {categories.length > 0 && (
-        <nav className="sidebar-categories" aria-label="Categories">
-          <p className="sidebar-heading">// categories</p>
-          <ul>
-            {categories.map(({ fieldValue, totalCount }) => (
-              <li key={fieldValue}>
-                <Link to={`/category/${fieldValue}/`}>
-                  {fieldValue} <span className="count">({totalCount})</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      </div>*/}
     </div>
   )
 }
