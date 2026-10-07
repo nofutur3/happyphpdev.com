@@ -43,7 +43,9 @@ const Support = () => {
   return (
     <aside className="support" aria-label="Support the author">
       <p className="support-heading">// support</p>
-      <p className="support-prompt">Enjoyed the post? A tip's always welcome.</p>
+      <p className="support-prompt">
+        Enjoyed the post? A tip's always welcome.
+      </p>
       <div className="support-banners">
         <a
           href={`https://revolut.me/${REVOLUT_HANDLE}`}
@@ -92,7 +94,11 @@ const Support = () => {
             >
               <QRCodeSVG value={`bitcoin:${BTC_ADDRESS}`} size={160} />
             </button>
-            <button type="button" className="support-address" onClick={handleCopy}>
+            <button
+              type="button"
+              className="support-address"
+              onClick={handleCopy}
+            >
               {BTC_ADDRESS}
             </button>
             <p className="support-copy-status" aria-live="polite">
