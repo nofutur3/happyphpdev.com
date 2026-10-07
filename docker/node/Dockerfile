@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:24-alpine
 
 MAINTAINER Jakub Vyvazil <jakub@vyvazil.cz>
 
@@ -17,7 +17,7 @@ RUN apk add --no-cache libsodium \
        gcc make g++
 
 # update npm
-RUN npm install -g npm@10.8.2
+RUN npm install -g npm@11.0.0
 
 COPY docker/node/docker-entrypoint.sh /usr/local/bin/
 
