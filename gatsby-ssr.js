@@ -10,3 +10,23 @@ exports.onRenderBody = ({ setHeadComponents }) => {
     />,
   ])
 }
+
+// Gatsby inlines the full stylesheet into every page's <head>. Link the
+// cacheable styles.<hash>.css instead so each page doesn't re-ship it.
+exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
+  if (process.env.NODE_ENV !== "production") return
+
+  replaceHeadComponents(
+    getHeadComponents().map(el =>
+      el.type === "style" && el.props["data-href"] ? (
+        <link
+          rel="stylesheet"
+          key={el.props["data-href"]}
+          href={el.props["data-href"]}
+        />
+      ) : (
+        el
+      ),
+    ),
+  )
+}
